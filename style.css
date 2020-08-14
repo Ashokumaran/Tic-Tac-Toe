@@ -1,0 +1,85 @@
+html,div{
+    background-color: #08090a;
+}
+.heading{
+    font-size: 100px;
+}
+.color1{
+    color: #db3309;
+}
+.color2{
+    color: #4eb149;
+}
+.color3{
+    color: #1a89c9;
+}
+
+.cell{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+.cell:hover{
+    cursor: pointer;
+    background-color: #181b1d;
+}
+
+.c1, .c2, .c4, .c5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 90px;
+    border-right: 3px solid #f2ca18;
+    border-bottom: 3px solid #f2ca18;
+}
+.c7, .c8{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 90px;
+    border-right: 3px solid #f2ca18;
+}
+
+.c3, .c6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 90px;
+    border-bottom: 3px solid #f2ca18;
+}
+.c9{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 90px; 
+}
+.winPopup{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 0,0, .9);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 80px;
+}
+#msg{
+    background-color: rgb(0,0,0,0);
+    color: white;
+}
+
+.winPopup.show{
+    display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+    .heading{
+        font-size: 50;
+    }
+    .winPopup{
+        font-size: 40px;
+    }
+}

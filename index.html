@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Varta:wght@600&family=Volkhov:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>TIC-TAC-TOE</title>
+</head>
+<body>
+<div class="container-fluid">
+    <h1 class="mt-5 text-center heading"><span class="color1">TIC</span>-<span class="color3">TAC</span>-<span class="color2">TOE</span></h1>
+    <div class = "mt-5" id="board">
+        <div class="row justify-content-center align-items-center">
+            <div class="cell c1" id='0'  data-cell></div>
+            <div class="cell c2" id='1'  data-cell></div>
+            <div class="cell c3" id='2'  dzata-cell></div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="cell c4" id='3'  data-cell></div>
+            <div class="cell c5" id='4'  data-cell></div>
+            <div class="cell c6" id='5'  data-cell></div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="cell c7" id='6'  data-cell></div>
+            <div class="cell c8" id='7'  data-cell></div>
+            <div class="cell c9" id='8'  data-cell></div>
+        </div>
+    </div>
+    <div class="winPopup" id="winPopUp">
+        <div id="msg"></div>
+        <button type="button" class="btn btn-warning mt-5" id="reset" onclick="reset()">Restart</button>
+    </div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
