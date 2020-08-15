@@ -76,13 +76,17 @@ function validation(){
     }
     playerChange();
 }
+document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click', handleClick));
+
 function reset(){
     document.querySelectorAll('.cell').forEach(cell => cell.innerHTML="");
-    let gameBoard = ["","","","","","","","",""];
+    gameBoard = ["","","","","","","","",""];
     currentPlayer = 'X';
+    game=true;
+    gameWon = false;
+
         let result = document.getElementById('winPopUp');
         result.setAttribute('class','winPopup');
         document.body.appendChild(result);
 
 }
-document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click', handleClick));
