@@ -82,4 +82,7 @@ html,div{
     .winPopup{
         font-size: 40px;
     }
+    body{
+        height: auto;
+    }
 }
